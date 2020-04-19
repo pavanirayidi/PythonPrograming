@@ -1,0 +1,18 @@
+
+def find_upper_and_lower(sentence):
+    #start writing your code here
+    l=u=0
+    result_list=[]
+    for i in sentence:
+        if i.isupper():
+            u+=1
+        elif i.islower():
+            l+=1
+        else:
+            pass
+    result_list.append(u)
+    result_list.append(l)
+    return result_list
+
+sentence="Welcome to Mysore"
+print(find_upper_and_lower(sentence))
