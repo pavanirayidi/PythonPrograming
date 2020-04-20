@@ -9,7 +9,8 @@ mat jet Jet Mat	:True'''
 #PF-Prac-26
 def check_occurence(string):
     #start writing your code here
-    return string.count("Jet")==string.count("Mat")
+    string=string.casefold()
+    return string.count("jet")==string.count("mat")
         
 string="string-Mat is beautiful compared to the jet Get a new Jet"
 print(check_occurence(string))
