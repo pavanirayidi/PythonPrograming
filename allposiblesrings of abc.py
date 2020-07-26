@@ -1,5 +1,8 @@
-p = permutations(a,1)
-for i in range (len(a)):
+a=input()
+b=[]
+from itertools import permutations
+for i in range (len(a)+1):
+    p = permutations(a,i)
     for j in p:  
         b="".join(j)
         print(b)
